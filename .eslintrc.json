@@ -4,9 +4,12 @@
     "commonjs": true,
     "es2021": true
   },
-  "extends": ["airbnb-base", "prettier"],
+  "extends": ["airbnb-base", "prettier", "plugin:react/recommended"],
   "parser": "@babel/eslint-parser",
   "parserOptions": {
+    "babelOptions": {
+      "presets": ["@babel/preset-react"]
+    },
     "requireConfigFile": false,
     "ecmaVersion": 12
   },
